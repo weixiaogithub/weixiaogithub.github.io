@@ -1,0 +1,96 @@
+    * {
+        margin: 0;
+    }
+        main {
+            margin: 0 auto;
+            padding: 0px;
+            margin-top: 124px; /* Add margin-top to avoid content being hidden under the fixed header */
+        }
+        
+        section {
+            margin-bottom: 50px;
+        }
+        footer {
+            margin-top: -50px;
+            padding: 20px;
+            background-color: #feba07;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 20px 20px 0 0;
+        }
+        @keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #feba07;
+  padding: 0px 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 30px;
+  animation-name: slideIn;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  padding-top:24px;
+  padding-bottom:24px
+}
+  h1 {     
+            text-shadow: 2px 2px 2px #f9f4dc;
+            font-size:200%;
+            display: inline-block;
+            margin-left:10px;
+            margin-bottom:5px;
+            color: #f8d86a; 
+        }
+        
+        navin ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        navin li {
+            margin-right: 20px;
+            margin-top: 7px;
+        }
+        
+        navin a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 10px 10px 10px 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        navin a:hover {
+            background-color:  #fbc82f;
+        }
+ #navbar.visible {
+  top: 0;
+}
+.inset-box {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #f1ca17;
+    border: 1px solid #aaa;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    line-height: 16px;
+    color: #333;
+    border-radius: 20px; /* 添加圆角 */
+  }
+  .half {
+    flex: 1; /* 自适应宽度 */
+    padding: 10px;
+    box-sizing: border-box; /* 包括内边距和边框在内 */
