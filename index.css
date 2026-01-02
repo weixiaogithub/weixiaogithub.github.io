@@ -287,14 +287,18 @@
 
         .sakura {
             position: fixed;
-            width: 10px;
-            height: 10px;
-            background-color: #ffccd5;
-            border-radius: 50% 50% 0 0;
+            width: 12px; /* 微调大小，雪花比樱花稍宽 */
+            height: 12px;
+            /* 替换：SVG雪花背景（白色带淡粉，贴合二次元风格，无需额外图片） */
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M12 0L14 8L22 8L16 13L18 21L12 17L6 21L8 13L2 8L10 8L12 0Z"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* 保留：下落+摇摆动画绑定 */
             animation: fall linear infinite, sway ease-in-out infinite;
             z-index: -1;
-            opacity: 0.8;
-         }
+            opacity: 0.9; /* 微调透明度，雪花更醒目 */
+            /* 移除原有樱花的背景色和圆角（无需保留） */
+                }
 @keyframes fall {
     to {
         transform: translateY(100vh) rotate(720deg);
