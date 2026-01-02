@@ -50,6 +50,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
+            bg-color: #feba07;
         }
 
         .blog-logo {
@@ -244,27 +245,6 @@
             box-shadow: 0 1px 3px rgba(106, 90, 205, 0.1);
         }
 
-        .hot-posts li {
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-            border-bottom: 1px dashed #eee;
-        }
-
-        .hot-posts li:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .hot-posts a {
-            color: var(--text-color);
-            font-size: 14px;
-        }
-
-        .hot-posts a:hover {
-            color: var(--accent-color);
-        }
-
         /* 页脚样式 */
         footer {
             background-color: var(--card-bg);
@@ -287,10 +267,10 @@
 
         .sakura {
             position: fixed;
-            width: 12px; /* 微调大小，雪花比樱花稍宽 */
-            height: 12px;
+            width: 15px; /* 微调大小，雪花比樱花稍宽 */
+            height: 15px;
             /* 替换：SVG雪花背景（白色带淡粉，贴合二次元风格，无需额外图片） */
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M12 0L14 8L22 8L16 13L18 21L12 17L6 21L8 13L2 8L10 8L12 0Z"/></svg>');
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffeff2"><path d="M12 0L14 8L22 8L16 13L18 21L12 17L6 21L8 13L2 8L10 8L12 0Z"/></svg>');
             background-size: contain;
             background-repeat: no-repeat;
             /* 保留：下落+摇摆动画绑定 */
