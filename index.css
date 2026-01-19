@@ -267,37 +267,6 @@
             margin-right: 5px; /* 微调间距，文字更整齐 */
         }
 
-        .sakura {
-            position: fixed;
-            width: 15px; /* 微调大小，雪花比樱花稍宽 */
-            height: 15px;
-            /* 替换：SVG雪花背景（白色带淡粉，贴合二次元风格，无需额外图片） */
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffeff2"><path d="M12 0L14 8L22 8L16 13L18 21L12 17L6 21L8 13L2 8L10 8L12 0Z"/></svg>');
-            background-size: contain;
-            background-repeat: no-repeat;
-            /* 保留：下落+摇摆动画绑定 */
-            animation: fall linear infinite, sway ease-in-out infinite;
-            z-index: -1;
-            opacity: 0.9; /* 微调透明度，雪花更醒目 */
-            /* 移除原有樱花的背景色和圆角（无需保留） */
-                }
-@keyframes fall {
-    to {
-        transform: translateY(100vh) rotate(720deg);
-        opacity: 0;
-    }
-}
-
-/* 新增：樱花左右摇摆动画 */
-@keyframes sway {
-    0%, 100% {
-        transform: translateX(0); /* 初始和结束位置：不偏移 */
-    }
-    50% {
-        transform: translateX(15px); /* 中间位置：向右偏移15px，形成摇摆效果 */
-    }
-}
-
         /* 响应式适配：移动端自动切换布局 */
         @media (max-width: 768px) {
             .container {
