@@ -55,7 +55,7 @@
 
         .blog-logo {
             font-size: 24px;
-            color: var(--primary-color);
+            color: var(--accent-color);
             font-weight: bold;
             text-shadow: 2px 2px 0 rgba(255, 126, 185, 0.2);
         }
@@ -70,7 +70,7 @@
         }
 
         .nav-menu a {
-            color: var(--primary-color);
+            color: var(--accent-color);
             font-size: 16px;
             position: relative;
             padding: 5px 0;
